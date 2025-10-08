@@ -1,0 +1,25 @@
+version: 1
+project:
+  title: Racial Justice Act Examples
+  authors:
+    - name: Sequoia Andrade
+    - name: Eric Rawn
+    - name: Philip Stark
+    - name: Dave Harding
+    
+  copyright: '2025'
+  github: https://github.com/sequoiarose/RJA-examples
+  toc:
+    - file: index.md
+    - title: Examples
+      children:
+        - file: example-1/index.md
+          children:
+           - file: example-1/report-descriptive.ipynb
+           - file: example-1/report-Q1.ipynb
+           - file: example-1/report-Q2.ipynb
+           - file: example-1/report-Q3.ipynb
+site:
+  options:
+    folders: true
+  template: book-theme
