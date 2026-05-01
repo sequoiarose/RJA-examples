@@ -52,9 +52,6 @@ def t_test(group_1, group_2, alternative, prng, plot=True, title="Test Statistic
 def plot_t_test(df, t, distr, title, bins):
     plt.hist(distr, density=True, bins=bins, color='blue', alpha=0.6)
     plt.axvline(x=t, color='red')
-    x = np.linspace(stats.t.ppf(0.0001, df),
-    stats.t.ppf(0.9999, df), 100)
-    plt.plot(x, stats.t.pdf(x, df), lw=2, alpha=1)
     plt.title(f"Permutation Distribution of {title} Under the Null")
     plt.grid(True, alpha=0.3)
     plt.show()
